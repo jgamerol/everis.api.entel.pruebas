@@ -55,44 +55,19 @@
             "default": "2018-12-12T12:12:12.444-03:00"
           },
           {
-            "name": "nameSociety",
-            "in": "header",
-            "description": "Estructura request a envíar.",
-            "required": true,
-            "type": "string",
-            "default": "ENT"
+            "$ref": "#/parameters/nameSociety"
           },
           {
-            "name": "documentType",
-            "in": "header",
-            "description": "Estructura request a envíar.",
-            "required": true,
-            "type": "string",
-            "default": "FS"
+            "$ref": "#/parameters/documentType"
           },
           {
-            "name": "documentNumber",
-            "in": "header",
-            "description": "Estructura request a envíar.",
-            "required": true,
-            "type": "string",
-            "default": "Folio de documento"
+            "$ref": "#/parameters/documentNumber"
           },
           {
-            "name": "key",
-            "in": "header",
-            "description": "Estructura request a envíar.",
-            "required": true,
-            "type": "string",
-            "default": "123"
+            "$ref": "#/parameters/key"
           },
           {
-            "name": "value",
-            "in": "header",
-            "description": "Estructura request a envíar.",
-            "required": true,
-            "type": "integer",
-            "default": "123"
+            "$ref": "#/parameters/value"
           }
         ],
         "responses": {
@@ -432,5 +407,47 @@
       "type": "object"
     }
 
+  },
+  "parameters": {
+    "nameSociety": {
+      "name": "nameSociety",
+      "in": "query",
+      "description": "Estructura request a envíar.",
+      "required": true,
+      "type": "string",
+      "default": "ENT"
+    },
+    "documentType": {
+      "name": "documentType",
+      "in": "query",
+      "description": "Estructura request a envíar.",
+      "required": true,
+      "type": "string",
+      "default": "FS"
+    },
+    "documentNumber": {
+      "name": "documentNumber",
+      "in": "query",
+      "description": "Estructura request a envíar.",
+      "required": true,
+      "type": "string",
+      "default": "Folio de documento"
+    },
+    "key": {
+      "name": "key",
+      "in": "query",
+      "description": "Estructura request a envíar.",
+      "required": true,
+      "type": "string",
+      "default": "123"
+    },
+    "value": {
+      "name": "value",
+      "in": "query",
+      "description": "Estructura request a envíar.",
+      "required": true,
+      "type": "integer",
+      "default": "123"
+    }
   }
 }
